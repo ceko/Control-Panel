@@ -1,0 +1,243 @@
+.gh-content .date_logged {
+	width:110px;
+	padding-left:30px;
+}
+
+.gr-content .date_logged {
+	width:110px;
+	padding-left:14px;
+}
+
+.gh-content .level, .gr-content .level {
+	width:60px;	
+}
+
+.gh-content .app, .gr-content .app {
+	width:150px;	
+}
+
+.gr-content .message {
+	white-space:nowrap;
+	width:60%;	
+	overflow:hidden;
+	text-overflow: ellipsis;
+}
+
+.gr-content .severity {
+	display:block;
+	background: url('../../images/grid-spritesheet.png') no-repeat -1px -3px;
+	width: 16px;
+	height: 14px;
+}
+
+.gr-content .severity.warn, .gr-content .severity.debug {	
+	background: url('../../images/grid-spritesheet.png') no-repeat -36px -3px;	
+}
+
+.gr-content .severity.error, .gr-content .severity.fatal {	
+	background: url('../../images/grid-spritesheet.png') no-repeat -18px -3px;	
+}
+
+#LoadedModulesWrapper {
+	position:relative;
+}
+
+#module-tabs {
+	width:313px;	
+	position:absolute;
+	left:0;
+	top:0;
+	z-index: 999999;	
+}
+
+#module-tabs .module-tab {
+	background: url('../images/loaded-plugins-spritesheet.png') no-repeat 0 -63px;
+	width: 320px;	
+	height: 62px;
+	margin-bottom:10px;	
+}
+
+.module-tab .tab-wrap {
+	padding-right:17px;
+}
+
+#module-tabs .module-tab.selected {
+	background: url('../images/loaded-plugins-spritesheet.png') no-repeat 0 0px;	
+}
+
+.module-tab .module-icon {
+	height:16px;
+	width:16px;
+	float:left;	
+	margin:5px;	
+}
+
+.module-tab .module-header {	
+	margin:5px 0px;
+	display:block;
+	float:left;
+}
+
+.module-tab .module-separator {
+	clear:both;
+	margin:2px 5px;		
+	border-bottom:1px dashed #CCC;
+}
+
+.module-tab .module-subtext {
+	color:#666;
+	display:block;
+	margin-left:5px;	
+	font-size:12px;		
+	overflow : hidden;
+  	text-overflow: ellipsis;
+  	display: -webkit-box;
+  	-webkit-line-clamp: 2;
+  	-webkit-box-orient: vertical;
+}
+
+#module-settings {
+	margin-left:313px;
+}
+
+.settings-wrap {
+	padding:8px 0px;
+	position:relative;
+}
+
+.settings-wrap .settings-content {
+	background-color:#FFF;
+	border-left:1px solid #CCC;
+	border-right:1px solid #CCC;
+	padding:0px 8px;	
+}
+
+.settings-wrap .settings-top {
+	position:absolute;
+	top:0;
+	left:0;
+	height:8px;	
+	width:100%;
+}
+
+.settings-wrap .settings-bot {
+	position:absolute;
+	bottom:0;
+	left:0;
+	height:8px;	
+	width:100%;
+}
+
+.settings-top .settings-tlc {
+	background: url('../images/loaded-plugins-spritesheet.png') no-repeat -92px -128px;
+	width: 8px;
+	height: 8px;
+	float:left;
+}
+
+.settings-top .settings-trc {
+	background: url('../images/loaded-plugins-spritesheet.png') no-repeat -80px -128px;
+	width: 8px;
+	height: 8px;
+	float:right;
+}
+
+.settings-top .settings-trm {
+	margin:0px 8px;
+	border-top:1px solid #CCC;	
+	background-color:#FFF;
+	height:8px;
+}
+
+.settings-bot .settings-blc {
+	background: url('../images/loaded-plugins-spritesheet.png') no-repeat -104px -128px;
+	width: 8px;
+	height: 8px;
+	float:left;
+}
+
+.settings-bot .settings-brc {
+	background: url('../images/loaded-plugins-spritesheet.png') no-repeat -68px -128px;
+	width: 8px;
+	height: 8px;
+	float:right;
+}
+
+.settings-bot .settings-brm {
+	margin:0px 8px;
+	border-bottom:1px solid #CCC;	
+	background-color:#FFF;
+	height:7px;
+}
+
+/*** simple containers ***/
+.panel-rounded {
+	padding:8px 0px;
+	position:relative;
+}
+
+.panel-content-wrap .rpanel-content {
+	background-color:#FFF;
+	border-left:1px solid #CCC;
+	border-right:1px solid #CCC;
+	padding:0px 8px;	
+}
+
+.panel-content-wrap .rpanel-top {
+	position:absolute;
+	top:0;
+	left:0;
+	height:8px;	
+	width:100%;
+}
+
+.panel-content-wrap .rpanel-bot {
+	position:absolute;
+	bottom:0;
+	left:0;
+	height:8px;	
+	width:100%;
+}
+
+.rpanel-top .rpanel-tlc {
+	background: url('../images/loaded-plugins-spritesheet.png') no-repeat -92px -128px;
+	width: 8px;
+	height: 8px;
+	float:left;
+}
+
+.rpanel-top .rpanel-trc {
+	background: url('../images/loaded-plugins-spritesheet.png') no-repeat -80px -128px;
+	width: 8px;
+	height: 8px;
+	float:right;
+}
+
+.rpanel-top .rpanel-trm {
+	margin:0px 8px;
+	border-top:1px solid #CCC;	
+	background-color:#FFF;
+	height:8px;
+}
+
+.rpanel-bot .rpanel-blc {
+	background: url('../images/loaded-plugins-spritesheet.png') no-repeat -104px -128px;
+	width: 8px;
+	height: 8px;
+	float:left;
+}
+
+.rpanel-bot .rpanel-brc {
+	background: url('../images/loaded-plugins-spritesheet.png') no-repeat -68px -128px;
+	width: 8px;
+	height: 8px;
+	float:right;
+}
+
+.rpanel-bot .rpanel-brm {
+	margin:0px 8px;
+	border-bottom:1px solid #CCC;	
+	background-color:#FFF;
+	height:7px;
+}
+/*** end simple containers ***/

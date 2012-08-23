@@ -1,0 +1,15 @@
+{%extends 'shared/simplecontainers/panel.html'%}
+
+{% block panel_content %}
+	{% for p in projects %}
+		{{ p }}
+	{% empty %}
+		no projects configured yet
+	{% endfor %}
+	<div class='dashed-separator'></div>	
+	<a href='projects/add' class='normal-button'>
+		<img src='{{STATIC_URL}}images/add.png' />
+		Add a Project
+	</a>
+	<div style='clear:both;'></div>
+{% endblock %}

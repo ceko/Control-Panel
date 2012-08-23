@@ -1,0 +1,147 @@
+body {
+	background-color: #333;
+	color#333;	
+	font-family:Tahoma, "Nimbus Sans L";
+	font-size:14px;
+}
+
+#MainWrapper {
+	width:1000px;
+	margin:50px auto 0px auto;	
+}
+
+#AppLinks a {
+	text-decoration:none;
+	color:#333;
+	background-color:#939393;
+	padding:0px 10px;
+	height:30px;
+	display:block;
+	float:left;
+	font-size:14px;
+	margin:5px 8px 0px 0px;
+}
+
+#AppLinks a:hover {
+	background-color:#CCC;	
+}
+
+#AppLinks a span {
+	display:block;
+	padding:8px 15px 0px 15px;
+}
+
+#AppLinks a.Selected {
+	position:relative;
+	z-index:999999;
+	top:1px;
+	margin-top:0px;
+	background-color:#EEE;
+	height:35px;		
+}
+
+#AppLinks a.Selected span {	
+	padding:9px 15px 6px 15px;	
+	border-bottom:1px dashed #CCC;
+}
+
+#MainContent {
+	clear:both;
+	background-color:#EEE;
+	border-top:1px solid #333;
+	padding:15px;
+}
+
+h1 {
+	font-size:14px;
+	margin:0px;
+	margin-bottom:10px;
+}
+
+.dashed-separator {
+	border-bottom:1px dashed #CCC;
+	margin:10px 0px;
+}
+
+/*** Buttons ***/
+a.normal-button, .normal-button {
+    display:block;
+    float:left;
+    margin:0 7px 0 0;
+    background-color:#f5f5f5;
+    border:1px solid #dedede;
+    border-top:1px solid #eee;
+    border-left:1px solid #eee;
+
+    font-family:"Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
+    font-size:12px;
+    line-height:130%;
+    text-decoration:none;
+    font-weight:bold;
+    color:#565656;
+    cursor:pointer;
+    padding:5px 10px 6px 7px; /* Links */
+}
+.normal-button {
+    width:auto;
+    overflow:visible;
+    padding:4px 10px 3px 7px; /* IE6 */
+}
+.normal-button[type]{
+    padding:5px 10px 5px 7px; /* Firefox */
+    line-height:17px; /* Safari */
+}
+*:first-child+html .normal-button[type]{
+    padding:4px 10px 3px 7px; /* IE7 */
+}
+.normal-button img, a.normal-button img{
+    margin:0 3px -3px 0 !important;
+    padding:0;
+    border:none;
+    width:16px;
+    height:16px;
+}
+
+/* STANDARD */
+
+.normal-button:hover, a.normal-button:hover{
+    background-color:#BE0E12;
+    border:1px solid #911518;
+    color:#FFFFFF;
+}
+a.normal-button:active{
+    background-color:#911518;
+    border:1px solid #911518;
+    color:#fff;
+}
+/*** End Buttons ***/
+
+#exposeMask {
+	z-index:99999998 !important;
+}
+
+/* use a semi-transparent image for the overlay */
+ .simple_overlay {
+ 	width:800px;
+   /* must be initially hidden */
+    display:none;
+ 
+    /* place overlay on top of other elements */
+    z-index:99999999 !important;
+ 
+    /* styling */
+        
+    
+ 	border:15px solid rgba(50, 50, 50, 0.8);
+    /* CSS3 styling for latest browsers */
+    -moz-box-shadow:0 0 50px 5px #000;
+    -webkit-box-shadow: 0 0 50px #000;
+    border-radius: 10px;
+ }
+ /* container for external content. uses vertical scrollbar, if needed */
+ div.contentWrap {
+   height:441px;
+   overflow: hidden;
+   background:#333;
+ }
+  

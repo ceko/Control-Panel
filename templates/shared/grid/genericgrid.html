@@ -1,0 +1,33 @@
+<div class='GenericGrid'>	
+	<div class='gridheader'>		
+			<div class='gh-left'></div>
+			<div class='gh-right'></div>
+			<div class='gh-content'>
+				{%block genericgrid_header%}
+				{%endblock%}
+			</div>				
+	</div>
+	
+	<div class='gridcontent'>
+		{% for row in data.rows %}			
+			<div class='gridrow{% if forloop.counter|divisibleby:2 %} alternate {% endif %}{% if forloop.last %} last{% endif %}'>
+				<div class='gr-left'></div>
+				<div class='gr-right'></div>
+				<div class='gr-content'>
+					{%block genericgrid_row%}
+					{%endblock%}					
+					<div style='clear:both;'></div>
+				</div>				
+			</div>
+		{% empty %}
+			<div class='gridrow last'>
+				<div class='gr-left'></div>
+				<div class='gr-right'></div>
+				<div class='gr-content'>
+					<span>There doesn't seem to be anything here.</span>
+					<div style='clear:both;'></div>						
+				</div>								
+			</div>	
+		{% endfor %}		
+	</div>
+</div>

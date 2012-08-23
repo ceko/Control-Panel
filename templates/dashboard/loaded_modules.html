@@ -1,0 +1,50 @@
+<div id='LoadedModulesWrapper'>
+	<div id='module-tabs'>
+		{% for plugin in cpanel_plugins %}
+			<div class='module-tab {% if plugin == selected_plugin %}selected{% endif %}'>
+				<div class='tab-wrap'>
+					<div class='module-icon' style='background-image:url({{STATIC_URL}}{{plugin.ICON_STATIC_PATH}})'></div>
+					<span class='module-header'>{{plugin.PLUGIN_DISPLAY_NAME}}</span>
+					<div class='module-separator'></div>
+					<span class='module-subtext'>{{plugin.PLUGIN_DESCRIPTION}}</span>
+				</div>
+			</div>
+		{% endfor %} 
+	</div>
+	<div id='module-settings'>
+		<div class='settings-wrap'>
+			<div class='settings-top'>
+				<div class='settings-tlc'></div>
+				<div class='settings-trc'></div>
+				<div class='settings-trm'></div>
+			</div>
+			<div class='settings-bot'>
+				<div class='settings-blc'></div>
+				<div class='settings-brc'></div>
+				<div class='settings-brm'></div>
+			</div>
+			<div class='settings-content'>
+				content goes here<br />
+				content goes here<br />
+				content goes here<br />
+				content goes here<br />
+				content goes here<br />
+				content goes here<br />
+				content goes here<br />
+				content goes here<br />
+				content goes here<br />
+				content goes here<br />
+				content goes here<br />
+				content goes here<br />
+				content goes here<br />
+				content goes here<br />
+				content goes here<br />
+				content goes here<br />
+				content goes here<br />
+				content goes here<br />
+				content goes here<br />
+				content goes here<br />
+			</div>
+		</div>
+	</div>
+</div>

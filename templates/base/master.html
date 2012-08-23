@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html lang='en'>
+    <head>
+        <title>{% block title %}Control Panel{% endblock %}</title>
+        <link href='{{STATIC_URL}}css/master.css' rel="stylesheet" type="text/css" media="screen" />
+        <link href='{{STATIC_URL}}dashboard/css/main.css' rel="stylesheet" type="text/css" media="screen" />
+        <script src='{{STATIC_URL}}js/jquery-1.8.0.min.js'></script>
+        <script src='{{STATIC_URL}}js/jquery.tools.min.js'></script>
+        <script src='{{STATIC_URL}}js/prepoverlays.js'></script>
+        {% block master_head %}{% endblock %}
+    </head>
+    <body>
+    	<div id='MainWrapper'>
+    		<div id='AppLinks'>    			
+    			{% for plugin in cpanel_plugins %}    				
+    				<a href='/{{plugin.DEFAULT_URL}}' {% if plugin == selected_plugin %}class='Selected'{% endif %}>
+    					<span>{{plugin.PLUGIN_DISPLAY_NAME}}</span>
+    				</a>    				
+    			{% endfor %}    			    			
+    		</div>
+    		<div id='MainContent'>
+	    		{% block master_content %}
+	    		{% endblock %}
+	    	</div>
+    	</div>
+    </body>
+</html>

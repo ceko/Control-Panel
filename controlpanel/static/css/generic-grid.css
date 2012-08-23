@@ -1,0 +1,101 @@
+.GenericGrid .gridheader {
+	height:32px;
+}
+
+.GenericGrid .gridheader .gh-left {
+	float:left;
+	width:7px;	
+	height:100%;
+	background: url('../images/grid-spritesheet.png') no-repeat -60px -94px;
+}
+
+.GenericGrid .gridheader .gh-right {
+	float:right;
+	width:7px;	
+	height:100%;
+	background: url('../images/grid-spritesheet.png') no-repeat -73px -94px;
+}
+
+.GenericGrid .gridheader .gh-content {	
+	margin:0px 7px;
+	height:100%;
+	background: url('../images/grid-spritesheet.png') repeat-x 0 -37px;
+	color:#FFF;
+}
+
+.GenericGrid .gridheader .gh-content span {
+	display:block;
+	float:left;
+	margin:5px 0px 0px 4px;
+	font-size:16px;
+}
+
+.GenericGrid .gridcontent .gridrow {
+	position:relative;
+	clear:both;	
+	padding:0px 7px;
+}
+
+.GenericGrid .gr-content span {
+	display:block;
+	float:left;
+	font-size:12px;
+	margin-left:3px;
+}
+
+.GenericGrid .gridcontent .gridrow .gr-left {
+	width:7px;
+	height:100%;
+	position:absolute;
+	left:0;
+	top:0;	
+	background: url('../images/grid-spritesheet.png') no-repeat -33px -93px;	
+}
+
+.GenericGrid .gridcontent .gridrow.last .gr-left {	
+	background-position:-33px bottom;	
+}
+
+.GenericGrid .gridcontent .gridrow.alternate .gr-left {	
+	background: url('../images/grid-spritesheet.png') no-repeat -1px -93px;	
+}
+
+.GenericGrid .gridcontent .gridrow.alternate.last .gr-left {	
+	background-position:-1px bottom;	
+}
+
+.GenericGrid .gridcontent .gridrow .gr-right {
+	width:7px;
+	height:100%;
+	position:absolute;
+	right:0;
+	top:0;
+	background: url('../images/grid-spritesheet.png') no-repeat -45px -93px;	
+}
+
+.GenericGrid .gridcontent .gridrow.last .gr-right {	
+	background-position:-45px bottom;	
+}
+
+.GenericGrid .gridcontent .gridrow.alternate .gr-right {	
+	background: url('../images/grid-spritesheet.png') no-repeat -17px -93px;
+}
+
+.GenericGrid .gridcontent .gridrow.alternate.last .gr-right {	
+	background-position:-17px bottom;	
+}
+
+.GenericGrid .gridcontent .gridrow .gr-content {
+	padding: 5px 0px;	
+	background-color:#FFF;
+	color:#666;
+}
+
+.GenericGrid .gridcontent .gridrow.last .gr-content {	
+	border-bottom:1px solid #CCC;
+	padding-bottom:2px;
+}
+
+.GenericGrid .gridcontent .gridrow.alternate .gr-content {	
+	background-color:#EEF5F7;
+}

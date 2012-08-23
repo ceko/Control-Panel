@@ -1,0 +1,14 @@
+{%extends 'shared/grid/genericgrid.html'%}
+
+{%block genericgrid_header%}
+	{% for header in data.columns %}
+		<span class='{{header.name}}'>{{header}}</span>
+	{% endfor %}
+{%endblock%}
+
+{%block genericgrid_row%}
+	<span class='severity {{row.level|lower}}'></span>
+	{% for fieldname, field in row.items %}
+		<span class='{{field.column.name}}'>{{field}}</span>
+	{% endfor %}
+{%endblock%}
