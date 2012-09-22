@@ -75,6 +75,8 @@ INSTALLED_APPS = CPANEL_APPS + (
     'debug_toolbar',
     'south',    
     'django.contrib.admin',
+    'widget_tweaks',
+    'django_extensions',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
 )

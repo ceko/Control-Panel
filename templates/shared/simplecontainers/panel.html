@@ -10,9 +10,11 @@
 			<div class='rpanel-brc'></div>
 			<div class='rpanel-brm'></div>
 		</div>
-		<div class='rpanel-content'>
+		<div class='rpanel-content'>			
+			{% comment %} hack {% endcomment %}
+			<div style='clear:both;height:1px;'>&nbsp;</div>
 			{% block panel_content %}
-			{% endblock %}
+			{% endblock %}			
 		</div>
 	</div>
 </div>

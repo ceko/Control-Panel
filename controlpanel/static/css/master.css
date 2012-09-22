@@ -1,8 +1,11 @@
 body {
 	background-color: #333;
 	color#333;	
-	font-family:Tahoma, "Nimbus Sans L";
 	font-size:14px;
+}
+
+* {
+	font-family:Tahoma, "Nimbus Sans L";
 }
 
 #MainWrapper {
@@ -53,7 +56,13 @@ body {
 }
 
 h1 {
-	font-size:14px;
+	font-size:16px;
+	margin:0px;
+	margin-bottom:10px;
+}
+
+h2 {
+	font-size:16px;
 	margin:0px;
 	margin-bottom:10px;
 }
@@ -144,4 +153,17 @@ a.normal-button:active{
    overflow: hidden;
    background:#333;
  }
-  
+
+/* status messages */
+.fieldWrapper .errorlist {
+	margin:3px 0px;
+	padding:5px 5px 5px 28px;
+	list-style:none;
+	background:url('../images/exclamation.png') no-repeat 5px 5px;
+	border:1px solid #911518;
+	background-color:#BE0E12;
+	color: #FFF;
+	font-weight:bold;
+	float:left;	
+	font-size:12px;
+} 

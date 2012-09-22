@@ -42,3 +42,8 @@ class SVNStep(Step):
     
 class ScriptStep(Step):
     script_location = models.CharField(max_length=255)
+    
+class FabricStep(Step):
+    host = models.CharField(max_length=250)
+    command_name = models.CharField(max_length=250)
+    
