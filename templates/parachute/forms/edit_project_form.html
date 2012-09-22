@@ -1,0 +1,62 @@
+{%extends 'shared/simplecontainers/panel.html'%}
+{% load widget_tweaks %}
+
+{% block panel_content %}
+	<form method="post">{% csrf_token %}
+		{{ project_form.non_field_errors }}
+		
+		<div id='inputs'>
+			<div id='project-fields'>
+		        <div class="fieldWrapper">		            	            
+		            <div class='field'>{{ project_form.name|attr:"watermark:Strategy Name..." }}</div>
+		            <div class='error'>{{ project_form.name.errors }}</div>
+		        </div>	    
+			    <div class="fieldWrapper">		            	            
+		            <div class='field'>{{ project_form.description|attr:"watermark:Description..." }}</div>
+		            <div class='error'>{{ project_form.description.errors }}</div>
+		        </div>
+		    </div>		    		    			
+		</div>
+		<div id='steps'>
+			<h2>Steps</h2>
+			{% for form in step_formset_manager.get_management_forms %}
+				{{ form }}
+			{% endfor %}			
+			{% for form in step_formset_manager.get_forms %}
+				<div style='height:50px;overflow:auto;border:1px solid red;'>
+					{% include form.default_template with form=form %}					
+				</div> 
+			{% empty %}			
+				You don't have any steps defined yet.  Add a new step below.
+			{% endfor %}	
+			<div class='dashed-divider'></div>
+			<div class='addstep'>				
+				{{ project_form.new_step_type }}
+				<button id='id_add_step_button' name='add_step' type='submit' class='normal-button'>
+					<img src='{{STATIC_URL}}images/add.png' />
+					Add New Step
+				</button>
+				<button id='id_remove_step_button' name='remove_step' type='submit' class='normal-button'>
+					<img src='{{STATIC_URL}}images/add.png' />
+					Remove Step
+				</button>
+			</div>
+			<div style='clear:both;'></div>
+			<div class='dashed-divider'></div>
+		</div>
+		<br />
+		<br />
+		<br />
+		<button type='submit' class='normal-button' name='add_project'>
+			<img src='{{STATIC_URL}}images/add.png' />
+			Add This Project
+		</button>
+	</form>
+	<div style='clear:both;'></div>
+	
+	<!--
+		<a href="/parachute/projects/add" rel="#overlay" style="text-decoration:none">
+		  Load Google
+		</a>
+	-->
+{% endblock %}

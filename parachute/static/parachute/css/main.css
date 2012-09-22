@@ -1,0 +1,43 @@
+#project-fields input, #project-fields textarea {
+	border:1px solid #CCC;	
+	font-size:16px;
+	color:#333;
+	padding:10px;
+	box-shadow: 4px 4px 4px -2px #CCC inset;
+}
+
+#id_new_step_type {
+	font-size:14px;
+	padding:5px;
+	border:1px solid #CCC;
+}
+
+#project-fields .field {
+	float:left;
+}
+
+#project-fields .errorlist {
+	float:left;
+	width:140px;
+	position:relative;
+	left:-175px;	
+	border-top:none;
+	border-right:none;
+	border-radius:0px 0px 0px 3px;
+	box-shadow: -1px 1px 2px 1px #CCC;
+}
+
+#id_name { width:450px; }
+#id_description { width: 650px; }
+#id_new_step_type { display:block; float:left; }
+#id_add_step_button { margin:2px 10px; }
+
+#steps {
+	clear:both;
+	padding-top:10px;		
+}
+
+.dashed-divider {
+ 	border-bottom:1px dashed #CCC;
+ 	margin:10px 0px;	
+}
